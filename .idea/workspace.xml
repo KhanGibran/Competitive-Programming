@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
+    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="Added Stream method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569959169211</updated>
       <workItem from="1569959173155" duration="19359000" />
-      <workItem from="1570102611999" duration="6401000" />
+      <workItem from="1570102611999" duration="6695000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570114623167</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Stream method">
+      <created>1570123209155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570123209155</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,14 +167,15 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Added lambda expression" />
     <MESSAGE value="Added test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test cases" />
+    <MESSAGE value="Added Stream method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Stream method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>10</line>
+          <line>11</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
