@@ -1,7 +1,7 @@
 package utils;
 
-import java.io.IOException;
 import java.io.InputStream;
+import java.util.function.Predicate;
 
 public class InputReader {
 
@@ -15,7 +15,9 @@ public class InputReader {
         this.stream = stream;
     }
 
-    void readInputConsole(int currentCharacter,int totalCharacters){
+    Predicate<Integer> isIgnoreChar = x-> x=='\n' || x=='\r' || x=='\t' || x==-1;
+
+    private void readInputConsole(int currentCharacter,int totalCharacters){
 
         this.currentCharacter=currentCharacter;
         this.totalCharacters=totalCharacters;
@@ -27,10 +29,6 @@ public class InputReader {
             throw new RuntimeException();
         }
      }
-
-    private boolean isIgnoreChar(int c){
-        return c == '\n' || c == '\r' || c == '\t' || c == -1;
-    }
 
     private byte read(){
         if(currentCharacter<totalCharacters)
@@ -47,18 +45,18 @@ public class InputReader {
 
         int c = read();
 
-        if(isIgnoreChar(c)){
+        if(isIgnoreChar.test(c)){
             return stringBuilder.toString();
         }
 
-        while(Character.isSpaceChar(c) || isIgnoreChar(c)){
+        while(Character.isSpaceChar(c) || isIgnoreChar.test(c)){
             c=read();
         }
 
         do{
             stringBuilder.appendCodePoint(c);
             c=read();
-        }while(!isIgnoreChar(c));
+        }while(!isIgnoreChar.test(c));
 
         return stringBuilder.toString();
     }
