@@ -2,7 +2,7 @@ package bigIntegers;
 
 import java.math.BigInteger;
 
-public class IntegerOperation
+public class BigIntegerOperation
 {
     public static void main(String[] args) {
         /**
