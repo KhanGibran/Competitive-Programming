@@ -11,16 +11,18 @@ public class InputReader {
     private int currentCharacter;
     private int totalCharacters;
 
-
     public InputReader(InputStream stream) {
         this.stream = stream;
+    }
+
+    void readInputConsole(){
         try{
-            totalCharacters=this.stream.read(buffer);
+            totalCharacters = stream.read(buffer);
         }
         catch(Exception e){
             throw new RuntimeException();
         }
-    }
+     }
 
     private boolean isIgnoreChar(int c){
         return c == '\n' || c == '\r' || c == '\t' || c == -1;
@@ -29,10 +31,14 @@ public class InputReader {
     private byte read(){
         if(currentCharacter<totalCharacters)
             return buffer[currentCharacter++];
+
         return -1;
     }
 
     public String readString() {
+
+        readInputConsole();
+
         final StringBuilder stringBuilder = new StringBuilder();
 
         int c = read();
@@ -49,6 +55,9 @@ public class InputReader {
             stringBuilder.appendCodePoint(c);
             c=read();
         }while(!isIgnoreChar(c));
+
+        currentCharacter=0;
+        totalCharacters=0;
 
         return stringBuilder.toString();
     }
