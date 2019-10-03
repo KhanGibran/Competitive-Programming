@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="Added Stream method">
+    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bigIntegers/IntegerOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +46,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.IntegerOperation">
+    <configuration name="IntegerOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bigIntegers.IntegerOperation" />
+      <module name="Competitive-Programming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bigIntegers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Competitive-Programming" />
@@ -70,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IntegerOperation" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestHelperMethodUtils" />
       </list>
@@ -87,6 +102,7 @@
       <updated>1569959169211</updated>
       <workItem from="1569959173155" duration="19359000" />
       <workItem from="1570102611999" duration="6695000" />
+      <workItem from="1570123368682" duration="2142000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -144,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570123209155</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Stream method">
+      <created>1570123537739</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570123537739</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
