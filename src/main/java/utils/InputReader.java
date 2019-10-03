@@ -1,6 +1,7 @@
 package utils;
 
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.function.Predicate;
 
 public class InputReader {
@@ -40,7 +41,6 @@ public class InputReader {
     public String readString() {
 
         readInputConsole(0,0);
-
         final StringBuilder stringBuilder = new StringBuilder();
 
         int c = read();
