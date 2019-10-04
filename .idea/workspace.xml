@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/multithreading/MultithreadingOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stringbuilder/CodeChef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stringbuilder/StringManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/map/MapProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/map/MyObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bigIntegers/IntegerOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bigIntegers/BigIntegerOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/FastInputReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringManipulation">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BigIntegerOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bigIntegers.BigIntegerOperation" />
       <module name="Competitive-Programming" />
@@ -114,10 +113,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.StringManipulation" />
         <item itemvalue="Application.CodeChef" />
         <item itemvalue="Application.BigIntegerOperation" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestHelperMethodUtils" />
       </list>
     </recent_temporary>
@@ -134,7 +133,7 @@
       <updated>1569959169211</updated>
       <workItem from="1569959173155" duration="19359000" />
       <workItem from="1570102611999" duration="6695000" />
-      <workItem from="1570123368682" duration="4552000" />
+      <workItem from="1570123368682" duration="11858000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570126475958</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="BigInteger added.">
+      <created>1570128037840</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1570128037840</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,14 +250,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bigIntegers/CodeChef.java</url>
           <line>20</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/FastInputReader.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/utils/FastInputReader.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

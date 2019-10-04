@@ -2,9 +2,11 @@ package utils;
 
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Calendar;
+import java.util.InputMismatchException;
 import java.util.function.Predicate;
 
-public class InputReader {
+public class FastInputReader {
 
     private InputStream stream;
     private byte buffer[] = new byte[1024];
@@ -12,7 +14,7 @@ public class InputReader {
     private int currentCharacter;
     private int totalCharacters;
 
-    public InputReader(InputStream stream) {
+    public FastInputReader(InputStream stream) {
         this.stream = stream;
     }
 
@@ -59,5 +61,31 @@ public class InputReader {
         }while(!isIgnoreChar.test(c));
 
         return stringBuilder.toString();
+    }
+
+    public int readInt() {
+        readInputConsole(0, 0);
+        int c = read();
+
+        while (Character.isSpaceChar(c) || isIgnoreChar.test(c))
+            c = read();
+
+        int sign = 1;
+        if (c == '-') {
+            sign = -1;
+            c = read();
+        }
+
+        int result = 0;
+        do {
+            if (c < '0' || c > '9')
+                throw new InputMismatchException();
+
+            result *= 10;
+            result += c - '0';
+            c=read();
+        } while (!Character.isSpaceChar(c) && !isIgnoreChar.test(c));
+
+        return result*sign;
     }
 }
