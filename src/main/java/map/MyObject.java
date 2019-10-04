@@ -28,4 +28,13 @@ public class MyObject {
     public int hashCode() {
         return Objects.hash(x, y, name);
     }
+
+    @Override
+    public String toString() {
+        return "MyObject{" +
+                "x=" + x +
+                ", y=" + y +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

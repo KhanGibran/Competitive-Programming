@@ -8,3 +8,10 @@ n=10^4, O(n*n)
 ==>Arrays.sort();
 ==>Arrays.parallelSort()
 
+HashMaps:-
+
+==> Need to find the hashcode() of the object and store it in corresponding bucket.
+==> If two objects have their hashcode() not equal, it means that objects can never be equal.
+==> If the hashcode() of two objects is equal, then the object may or may not be equal.
+==> There could be null to null mapping also.
+==> We always need to remember to override the hashcode() and equals() of an object that we need to use in the hashmap especially in the key.
