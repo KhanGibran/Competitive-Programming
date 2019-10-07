@@ -3,7 +3,7 @@ package problems.leetcode;
 import java.util.List;
 import java.util.Stack;
 
-public class Solution2
+public class ReverseNumber
 {
     public static int reverse(int x) {
         boolean negativeSignflag=false;

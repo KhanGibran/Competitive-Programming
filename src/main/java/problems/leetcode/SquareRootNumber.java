@@ -1,6 +1,6 @@
 package problems.leetcode;
 
-public class Solution5
+public class SquareRootNumber
 {
     public static void main(String[] args) {
         System.out.println(mySqrt(8));

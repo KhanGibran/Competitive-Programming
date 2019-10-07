@@ -1,6 +1,6 @@
 package problems.leetcode;
 
-public class Solution6
+public class IsPalindrome
 {
     public static void main(String[] args) {
         System.out.println(isPalindrome("A man, a plan, a canal: Panama"));

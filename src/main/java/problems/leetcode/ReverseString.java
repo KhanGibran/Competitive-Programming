@@ -1,6 +1,6 @@
 package problems.leetcode;
 
-public class Solution8{
+public class ReverseString {
 
     public void reverseString(char[] s) {
         int i=0;

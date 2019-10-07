@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Solution1 {
+class TwoSum {
     public static void main(String[] args) {
 
         int nums[] = new int[]{2, -5, 11, 15};

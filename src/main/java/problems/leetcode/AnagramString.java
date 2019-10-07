@@ -1,10 +1,10 @@
 package problems.leetcode;
 
 
-public class Solution9
+public class AnagramString
 {
     public static void main(String[] args) {
-        Solution9 solution9 = new Solution9();
+        AnagramString solution9 = new AnagramString();
         System.out.println(solution9.isAnagram("anagram","nagaram"));
     }
     public boolean isAnagram(String s, String t) {

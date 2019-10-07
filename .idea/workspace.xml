@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/SieveAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/RotateArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/SquareRootNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/IsPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Solution9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/AnagramString.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,9 +56,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution9">
-    <configuration name="Solution4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.Solution4" />
+  <component name="RunManager" selected="Application.BinaryTree">
+    <configuration name="AnagramString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.AnagramString" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -60,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.Solution5" />
+    <configuration name="BinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.BinaryTree" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.Solution6" />
+    <configuration name="IsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.IsPalindrome" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.Solution7" />
+    <configuration name="SquareRootNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.SquareRootNumber" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -99,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.Solution9" />
+    <configuration name="StringMatching" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.StringMatching" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution9" />
-        <item itemvalue="Application.Solution7" />
-        <item itemvalue="Application.Solution6" />
-        <item itemvalue="Application.Solution5" />
-        <item itemvalue="Application.Solution4" />
+        <item itemvalue="Application.BinaryTree" />
+        <item itemvalue="Application.AnagramString" />
+        <item itemvalue="Application.StringMatching" />
+        <item itemvalue="Application.IsPalindrome" />
+        <item itemvalue="Application.SquareRootNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +147,8 @@
       <workItem from="1570123368682" duration="15463000" />
       <workItem from="1570194990833" duration="71000" />
       <workItem from="1570299820521" duration="13218000" />
-      <workItem from="1570365019424" duration="6905000" />
+      <workItem from="1570365019424" duration="10148000" />
+      <workItem from="1570439577492" duration="217000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -258,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570430160886</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Sting Matching Added">
+      <created>1570432474018</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1570432474018</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Sting Matching Added">
+      <created>1570432499827</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1570432499827</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,34 +337,39 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution2.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseNumber.java</url>
           <line>30</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution2.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseNumber.java</url>
           <line>28</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution3.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/SieveAlgorithm.java</url>
           <line>9</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution4.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/RotateArray.java</url>
           <line>9</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution6.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/IsPalindrome.java</url>
           <line>23</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/Solution6.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/IsPalindrome.java</url>
           <line>20</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/BinaryTree.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

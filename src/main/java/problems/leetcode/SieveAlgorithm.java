@@ -2,7 +2,7 @@ package problems.leetcode;
 
 import java.util.Arrays;
 
-class Solution3 {
+class SieveAlgorithm {
     public static void main(String[] args) {
         System.out.println(countPrimes(2));
     }
