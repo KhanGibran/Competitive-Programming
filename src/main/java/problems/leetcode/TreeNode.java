@@ -1,12 +1,12 @@
 package problems.leetcode;
 
-public class Node
+public class TreeNode
 {
     int value;
-    Node left;
-    Node right;
+    TreeNode left;
+    TreeNode right;
 
-    Node(int value){
+    TreeNode(int value){
         this.value=value;
         this.left=null;
         this.right=null;
