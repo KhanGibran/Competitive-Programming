@@ -23,7 +23,12 @@ public class ReverseLinkedList
         return head;
     }
 
-
+    private void deleteNode(LinkedListNode node){
+        if(node.next!=null){
+            node.data = node.next.data;
+            node.next = node.next.next;
+        }
+    }
 
     private void printList(LinkedListNode head){
         while (head != null) {

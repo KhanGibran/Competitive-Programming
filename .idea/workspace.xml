@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/FizzBuzz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/LinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/LinkedListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/MajorityElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/MoveZeros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/ReverseLinkedList.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HeightBinaryTree">
+  <component name="RunManager" selected="Application.MajorityElement">
     <configuration name="AnagramString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problems.leetcode.AnagramString" />
       <module name="Competitive-Programming" />
@@ -77,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsPalindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.IsPalindrome" />
+    <configuration name="MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.MajorityElement" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareRootNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.SquareRootNumber" />
+    <configuration name="MoveZeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.MoveZeros" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -118,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MajorityElement" />
+        <item itemvalue="Application.MoveZeros" />
         <item itemvalue="Application.HeightBinaryTree" />
         <item itemvalue="Application.AnagramString" />
         <item itemvalue="Application.StringMatching" />
-        <item itemvalue="Application.IsPalindrome" />
-        <item itemvalue="Application.SquareRootNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +141,7 @@
       <workItem from="1570299820521" duration="13218000" />
       <workItem from="1570365019424" duration="10148000" />
       <workItem from="1570439577492" duration="1766000" />
-      <workItem from="1570452863188" duration="2746000" />
+      <workItem from="1570452863188" duration="7122000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -292,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570440480911</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Code Reafactoring">
+      <created>1570479272027</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1570479272027</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,9 +382,9 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/BinaryTree.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/MoveZeros.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
