@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/HammingDistance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/NumberComplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/PrimeNumberofSetBits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -444,16 +440,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
           <line>28</line>
           <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

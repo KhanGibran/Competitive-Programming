@@ -7,7 +7,7 @@ public class StringPermutation
     public static void main(String[] args) {
         StringPermutation stringPermutation = new StringPermutation();
         String soFar="";
-        String str = "abc";
+        String str = "a1b2";
 
         boolean visited[] = new boolean[str.length()];
         stringPermutation.printPermutation(str,soFar,visited);
@@ -15,12 +15,12 @@ public class StringPermutation
 
     private void printPermutation(String str,String soFar,boolean visited[])
     {
-        if(soFar.length()==3)
+        if(soFar.length()==4)
         {
             System.out.println(soFar);
             return;
         }
-        for(int i=0;i<3;i++)
+        for(int i=0;i<4;i++)
         {
             if(visited[i]!=true)
             {
