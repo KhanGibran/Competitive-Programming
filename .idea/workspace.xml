@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" afterDir="false" />
+    <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="Code Reafactoring">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringPermutation">
+  <component name="RunManager" selected="Application.LetterCasePermutation">
     <configuration name="HammingDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problems.leetcode.HammingDistance" />
       <module name="Competitive-Programming" />
@@ -114,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StringPermutation" />
         <item itemvalue="Application.LetterCasePermutation" />
+        <item itemvalue="Application.StringPermutation" />
         <item itemvalue="Application.PrimeNumberofSetBits" />
         <item itemvalue="Application.NumberComplement" />
         <item itemvalue="Application.HammingDistance" />
@@ -433,13 +434,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="67" />
+          <line>39</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="68" />
+          <line>25</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
