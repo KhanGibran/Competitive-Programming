@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8077ff6-bf18-4dce-a546-a4119dbe9bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/ExcelSheetColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/MaxProfit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/SortedArrayToBst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/HammingDistance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/NumberComplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/PrimeNumberofSetBits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,9 +50,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExcelSheetColumn">
-    <configuration name="ExcelSheetColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.ExcelSheetColumn" />
+  <component name="RunManager" selected="Application.StringPermutation">
+    <configuration name="HammingDistance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.HammingDistance" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -63,8 +64,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegerToRoman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.IntegerToRoman" />
+    <configuration name="LetterCasePermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.LetterCasePermutation" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -76,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxProfit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.MaxProfit" />
+    <configuration name="NumberComplement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.NumberComplement" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -89,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.RomanToInteger" />
+    <configuration name="PrimeNumberofSetBits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.PrimeNumberofSetBits" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -102,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortedArrayToBst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.leetcode.SortedArrayToBst" />
+    <configuration name="StringPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="problems.leetcode.StringPermutation" />
       <module name="Competitive-Programming" />
       <extension name="coverage">
         <pattern>
@@ -117,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExcelSheetColumn" />
-        <item itemvalue="Application.SortedArrayToBst" />
-        <item itemvalue="Application.MaxProfit" />
-        <item itemvalue="Application.IntegerToRoman" />
-        <item itemvalue="Application.RomanToInteger" />
+        <item itemvalue="Application.StringPermutation" />
+        <item itemvalue="Application.LetterCasePermutation" />
+        <item itemvalue="Application.PrimeNumberofSetBits" />
+        <item itemvalue="Application.NumberComplement" />
+        <item itemvalue="Application.HammingDistance" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +144,9 @@
       <workItem from="1570365019424" duration="10148000" />
       <workItem from="1570439577492" duration="1766000" />
       <workItem from="1570452863188" duration="8349000" />
-      <workItem from="1570616076366" duration="15750000" />
+      <workItem from="1570616076366" duration="17045000" />
+      <workItem from="1570800532200" duration="4347000" />
+      <workItem from="1570872662451" duration="10179000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1569959505867</created>
@@ -306,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570629103301</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Code Reafactoring">
+      <created>1570648626216</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1570648626216</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,9 +426,34 @@
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/ExcelSheetColumn.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="64" />
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/NumberComplement.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/NumberComplement.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/LetterCasePermutation.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/problems/leetcode/StringPermutation.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
