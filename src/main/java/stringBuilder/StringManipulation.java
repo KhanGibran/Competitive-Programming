@@ -1,4 +1,4 @@
-package stringbuilder;
+package stringBuilder;
 
 public class StringManipulation
 {
