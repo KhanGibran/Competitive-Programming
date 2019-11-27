@@ -8,6 +8,7 @@ public class Heap
         }
         System.out.println();
     }
+
     public static  void minHeapify(int arr[],int rootIndex,int arrayLength){
         int leftChildIndex = 2*rootIndex+1;
         int rightChildIndex = 2*rootIndex+2;
@@ -22,7 +23,7 @@ public class Heap
         if(minimumIndex!=rootIndex)
         {
             swap(arr,minimumIndex,rootIndex);
-            maxHeapify(arr,minimumIndex,arrayLength);
+            minHeapify(arr,minimumIndex,arrayLength);
         }
     }
 
@@ -50,10 +51,29 @@ public class Heap
         arr[b]=temp;
     }
 
+    private static void buildMinHeap(int arr[],int arrLength){
+        int firstNonLeafIndex = (arrLength-1)/2;
+
+        for(int index = firstNonLeafIndex;index>=0;index--){
+            minHeapify(arr,index,arrLength);
+        }
+    }
+
+    private static void buildMaxHeap(int arr[],int arrLength){
+        int firstNonLeafNodeIndex = (arrLength-1)/2;
+
+        for(int index=firstNonLeafNodeIndex;index>=0;index--){
+            maxHeapify(arr,index,arrLength);
+        }
+    }
+
     public static void main(String[] args) {
-        int arr[] = new int[]{1,5,6,8,12,14,16};
+        int arr[] = new int[]{1,2,3,4,5,6,7,8};
+        buildMaxHeap(arr,arr.length);
+        print(arr);
+        buildMinHeap(arr,arr.length);
 //        maxHeapify(arr,0,arr.length);
-        minHeapify(arr,0,arr.length);
+//        minHeapify(arr,0,arr.length);
         print(arr);
     }
 }
