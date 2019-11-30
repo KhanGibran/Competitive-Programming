@@ -9,6 +9,12 @@ public class Heap
         System.out.println();
     }
 
+    private static void swap(int arr[],int a, int b) {
+        int temp = arr[a];
+        arr[a]=arr[b];
+        arr[b]=temp;
+    }
+
     /**
      * Complexity => O(logn)
      * @param arr
@@ -34,6 +40,73 @@ public class Heap
     }
 
     /**
+     * Complexity => O(n)
+     * @param arr
+     * @param arrLength
+     */
+    private static void buildMinHeap(int arr[],int arrLength){
+        int firstNonLeafIndex = (arrLength-1)/2;
+
+        for(int index = firstNonLeafIndex;index>=0;index--){
+            minHeapify(arr,index,arrLength);
+        }
+    }
+
+    /**
+     * Complexity => O(logn)
+     * @param arr
+     * @param arrLength
+     * @return
+     */
+    private static int deleteMinFromMinHeap(int arr[],int arrLength)
+    {
+        if(arrLength<1)
+            return -1;
+        int minElement = arr[0];
+        arr[0]=arr[arrLength-1];
+        minHeapify(arr,0,arrLength-1);
+        return minElement;
+    }
+    //TODO Max from MinHeap
+
+    /**
+     *
+     * @param arr
+     * @param nodeIndex
+     * @param key
+     * @param arrLength
+     */
+    private static void decreaseNodeInMinHeap(int arr[],int nodeIndex,int key,int arrLength){
+        if(arr[nodeIndex]<key){
+            System.out.println("Error");
+            return;
+        }
+
+        arr[nodeIndex]=key;
+
+        while(nodeIndex>=0 && arr[(nodeIndex-1)/2] > arr[nodeIndex]){
+            swap(arr,(nodeIndex-1)/2,nodeIndex);
+            nodeIndex = (nodeIndex-1)/2;
+        }
+    }
+
+    /**
+     *
+     * @param arr
+     * @param nodeIndex
+     * @param key
+     * @param arrLength
+     */
+    private static void increaseNodeInMinHeap(int arr[],int nodeIndex,int key,int arrLength){
+        if(arr[nodeIndex]>key){
+            System.out.println("Error");
+            return;
+        }
+        arr[nodeIndex]=key;
+        minHeapify(arr,nodeIndex,arrLength);
+    }
+
+    /**
      * Complexity => O(logn)
      * @param arr
      * @param rootIndex
@@ -54,25 +127,6 @@ public class Heap
         {
             swap(arr,largestIndex,rootIndex);
             maxHeapify(arr,largestIndex,arrayLength);
-        }
-    }
-
-    private static void swap(int arr[],int a, int b) {
-        int temp = arr[a];
-        arr[a]=arr[b];
-        arr[b]=temp;
-    }
-
-    /**
-     * Complexity => O(n)
-     * @param arr
-     * @param arrLength
-     */
-    private static void buildMinHeap(int arr[],int arrLength){
-        int firstNonLeafIndex = (arrLength-1)/2;
-
-        for(int index = firstNonLeafIndex;index>=0;index--){
-            minHeapify(arr,index,arrLength);
         }
     }
 
@@ -106,23 +160,6 @@ public class Heap
     //TODO Min from MaxHeap
 
     /**
-     * Complexity => O(logn)
-     * @param arr
-     * @param arrLength
-     * @return
-     */
-    private static int deleteMinFromMinHeap(int arr[],int arrLength)
-    {
-        if(arrLength<1)
-            return -1;
-        int minElement = arr[0];
-        arr[0]=arr[arrLength-1];
-        minHeapify(arr,0,arrLength-1);
-        return minElement;
-    }
-    //TODO Max from MinHeap
-
-    /**
      *
      * @param arr
      * @param nodeIndex
@@ -133,12 +170,12 @@ public class Heap
 
         if(arr[nodeIndex]<key){
             System.out.println("Error");
+            return;
         }
 
         arr[nodeIndex] = key;
         maxHeapify(arr,nodeIndex,arrLength);
     }
-    //TODO Decrease Node in MinHeap
 
     /**
      *
@@ -150,21 +187,23 @@ public class Heap
     private static void increaseNodeInMaxHeap(int arr[],int nodeIndex,int key,int arrLength){
         if(arr[nodeIndex]>key){
             System.out.println("The value of node is already greater than key");
+            return;
         }
 
         arr[nodeIndex] = key;
 
-        while(nodeIndex>0 && arr[(nodeIndex-1)/2]<arr[nodeIndex]){
+        while(nodeIndex>=0 && arr[(nodeIndex-1)/2]<arr[nodeIndex]){
             swap(arr,(nodeIndex-1)/2,nodeIndex);
             nodeIndex = (nodeIndex-1)/2;
         }
     }
-    //TODO Increase Node in MinHeap
 
     public static void main(String[] args) {
-        int arr[] = new int[]{14,13,12,10,8};
+        int arr[] = new int[]{5,6,7,8,9,10};
 //        increaseNodeInMaxHeap(arr,3,20,arr.length);
-        decreaseNodeInMaxHeap(arr,1,7,arr.length);
+//        decreaseNodeInMaxHeap(arr,1,7,arr.length);
+//        increaseNodeInMinHeap(arr,1,15,arr.length);
+        decreaseNodeInMinHeap(arr,3,2,arr.length);
         print(arr);
 //        int maxFromMaxHeap = deleteMaxFromMaxHeap(arr,5);
 //        buildMaxHeap(arr,arr.length);
