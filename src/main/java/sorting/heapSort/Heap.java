@@ -220,14 +220,54 @@ public class Heap
         increaseNodeInMaxHeap(arr,arrLength-1,key,arrLength);
     }
 
+    /**
+     * 1) First, we have to Build Max Heap of the Input.
+     * 2) We will take the help of MaxHeapify to sort the data. It will iterate over the elements and fix maximum element from the End.
+     * 3) It will sort the data in Increasing Order.
+     * @param arr
+     * @param arrLength
+     */
+    private static void heapSortInIncreasingOrder(int arr[],int arrLength){
+        buildMaxHeap(arr,arrLength);
+//        print(arr);
+
+        for(int index=arrLength-1;index>=1;index--){
+            swap(arr,0,index);
+            arrLength--;
+            maxHeapify(arr,0,arrLength);
+        }
+    }
+
+    /**
+     * 1) First, we have to build Min Heap of the input.
+     * 2) We will take the help of MinHeapify to sort the data. It will iterate over the elements and fix minimum element from the End.
+     * 3) It will sort the data in Decreasing Order.
+     * @param arr
+     * @param arrLength
+     */
+    private static void heapSortInDecreasingOrder(int arr[],int arrLength){
+        buildMinHeap(arr,arrLength);
+//        print(arr);
+
+        for(int index=arrLength-1;index>-1;index--){
+            swap(arr,0,index);
+            arrLength--;
+            minHeapify(arr,0,arrLength);
+        }
+    }
+
     public static void main(String[] args) {
-        int arr[] = new int[]{10,20,30,40,50,60,70,0};
+        int arr[] = new int[]{12, 11, 13, 5, 6, 7};
 //        increaseNodeInMaxHeap(arr,3,20,arr.length);
 //        decreaseNodeInMaxHeap(arr,1,7,arr.length);
 //        increaseNodeInMinHeap(arr,1,15,arr.length);
 //        decreaseNodeInMinHeap(arr,3,2,arr.length);
 //        insertInMaxHeap(arr,300,arr.length);
-        insertInMinHeap(arr,5,arr.length);
+        //insertInMinHeap(arr,5,arr.length);
+        print(arr);
+        heapSortInIncreasingOrder(arr,arr.length);
+        print(arr);
+        heapSortInDecreasingOrder(arr,arr.length);
         print(arr);
 //        int maxFromMaxHeap = deleteMaxFromMaxHeap(arr,5);
 //        buildMaxHeap(arr,arr.length);
