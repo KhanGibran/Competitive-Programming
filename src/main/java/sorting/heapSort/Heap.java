@@ -150,7 +150,7 @@ public class Heap
      * @return
      */
     private static int deleteMaxFromMaxHeap(int arr[],int arrLength){
-        if(arrLength<1)
+        if(arrLength < 1)
             return -1;
         int maxElement = arr[0];
         arr[0] = arr[arrLength-1];
