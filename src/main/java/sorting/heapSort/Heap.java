@@ -84,7 +84,7 @@ public class Heap
 
         arr[nodeIndex]=key;
 
-        while(nodeIndex>=0 && arr[(nodeIndex-1)/2] > arr[nodeIndex]){
+        while(nodeIndex > 0 && arr[(nodeIndex-1)/2] > arr[nodeIndex]){
             swap(arr,(nodeIndex-1)/2,nodeIndex);
             nodeIndex = (nodeIndex-1)/2;
         }
@@ -104,6 +104,17 @@ public class Heap
         }
         arr[nodeIndex]=key;
         minHeapify(arr,nodeIndex,arrLength);
+    }
+
+    /**
+     *
+     * @param arr
+     * @param key
+     * @param arrLength
+     */
+    private static void insertInMinHeap(int arr[],int key,int arrLength){
+        arr[arrLength-1] = Integer.MAX_VALUE;
+        decreaseNodeInMinHeap(arr,arrLength-1,key,arrLength);
     }
 
     /**
@@ -192,18 +203,31 @@ public class Heap
 
         arr[nodeIndex] = key;
 
-        while(nodeIndex>=0 && arr[(nodeIndex-1)/2]<arr[nodeIndex]){
+        while(nodeIndex > 0 && arr[(nodeIndex-1)/2]<arr[nodeIndex]){
             swap(arr,(nodeIndex-1)/2,nodeIndex);
             nodeIndex = (nodeIndex-1)/2;
         }
     }
 
+    /**
+     *
+     * @param arr
+     * @param key
+     * @param arrLength
+     */
+    private static void insertInMaxHeap(int arr[],int key,int arrLength){
+        arr[arrLength-1] = Integer.MIN_VALUE;
+        increaseNodeInMaxHeap(arr,arrLength-1,key,arrLength);
+    }
+
     public static void main(String[] args) {
-        int arr[] = new int[]{5,6,7,8,9,10};
+        int arr[] = new int[]{10,20,30,40,50,60,70,0};
 //        increaseNodeInMaxHeap(arr,3,20,arr.length);
 //        decreaseNodeInMaxHeap(arr,1,7,arr.length);
 //        increaseNodeInMinHeap(arr,1,15,arr.length);
-        decreaseNodeInMinHeap(arr,3,2,arr.length);
+//        decreaseNodeInMinHeap(arr,3,2,arr.length);
+//        insertInMaxHeap(arr,300,arr.length);
+        insertInMinHeap(arr,5,arr.length);
         print(arr);
 //        int maxFromMaxHeap = deleteMaxFromMaxHeap(arr,5);
 //        buildMaxHeap(arr,arr.length);
