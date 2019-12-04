@@ -45,7 +45,7 @@ public class Heap
      * @param arrLength
      */
     private static void buildMinHeap(int arr[],int arrLength){
-        int firstNonLeafIndex = (arrLength-1)/2;
+        int firstNonLeafIndex = (arrLength)/2-1;
 
         for(int index = firstNonLeafIndex;index>=0;index--){
             minHeapify(arr,index,arrLength);
@@ -147,9 +147,9 @@ public class Heap
      * @param arrLength
      */
     private static void buildMaxHeap(int arr[],int arrLength){
-        int firstNonLeafNodeIndex = (arrLength-1)/2;
+        int firstNonLeafIndex = (arrLength)/2-1;
 
-        for(int index=firstNonLeafNodeIndex;index>=0;index--){
+        for(int index=firstNonLeafIndex;index>=0;index--){
             maxHeapify(arr,index,arrLength);
         }
     }
