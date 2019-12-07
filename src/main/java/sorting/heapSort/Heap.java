@@ -2,6 +2,10 @@ package sorting.heapSort;
 
 public class Heap
 {
+    /**
+     *
+     * @param arr
+     */
     private static void print(int arr[]){
         for (int x:arr) {
             System.out.print(x+" ");
@@ -9,6 +13,12 @@ public class Heap
         System.out.println();
     }
 
+    /**
+     *
+     * @param arr
+     * @param a
+     * @param b
+     */
     private static void swap(int arr[],int a, int b) {
         int temp = arr[a];
         arr[a]=arr[b];
