@@ -1,7 +1,6 @@
 package interview.heap.problems;
 
 import interview.heap.util.HeapUtil;
-import sorting.heapSort.Heap;
 
 /**
  * Find Maximum Element in Min Heap
